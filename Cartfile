@@ -1,1 +1,4 @@
 github "iwasrobbed/Down"
+#github "mathiasnagler/SwiftyAcknowledgements" #original project - outdated
+github "calda/SwiftyAcknowledgements" #pull request project with swift 5
+github "hackiftekhar/IQKeyboardManager"
