@@ -16,6 +16,8 @@
 		3373A217225E7EED003786EF /* Down.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3373A215225E7E70003786EF /* Down.framework */; };
 		33A92321226069A10012AA58 /* IQKeyboardManagerSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A9231F226069A10012AA58 /* IQKeyboardManagerSwift.framework */; };
 		33A92322226069A10012AA58 /* SwiftyAcknowledgements.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33A92320226069A10012AA58 /* SwiftyAcknowledgements.framework */; };
+		33E0AFF622612EB8007BEFAD /* Html.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33E0AFF522612EB8007BEFAD /* Html.framework */; };
+		33E0AFF822613908007BEFAD /* modern.css in Resources */ = {isa = PBXBuildFile; fileRef = 33E0AFF722613908007BEFAD /* modern.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		3373A215225E7E70003786EF /* Down.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Down.framework; path = Carthage/Build/iOS/Down.framework; sourceTree = "<group>"; };
 		33A9231F226069A10012AA58 /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		33A92320226069A10012AA58 /* SwiftyAcknowledgements.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyAcknowledgements.framework; path = Carthage/Build/iOS/SwiftyAcknowledgements.framework; sourceTree = "<group>"; };
+		33E0AFF522612EB8007BEFAD /* Html.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Html.framework; path = Carthage/Build/iOS/Html.framework; sourceTree = "<group>"; };
+		33E0AFF722613908007BEFAD /* modern.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = modern.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 				3373A217225E7EED003786EF /* Down.framework in Frameworks */,
 				33A92321226069A10012AA58 /* IQKeyboardManagerSwift.framework in Frameworks */,
 				33A92322226069A10012AA58 /* SwiftyAcknowledgements.framework in Frameworks */,
+				33E0AFF622612EB8007BEFAD /* Html.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				3373A212225E7CC5003786EF /* Cartfile */,
+				33E0AFF722613908007BEFAD /* modern.css */,
 				3373A1FD225E7B8C003786EF /* MultiMark */,
 				3373A1FC225E7B8C003786EF /* Products */,
 				3373A214225E7E70003786EF /* Frameworks */,
@@ -82,6 +88,7 @@
 		3373A214225E7E70003786EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				33E0AFF522612EB8007BEFAD /* Html.framework */,
 				33A9231F226069A10012AA58 /* IQKeyboardManagerSwift.framework */,
 				33A92320226069A10012AA58 /* SwiftyAcknowledgements.framework */,
 				3373A215225E7E70003786EF /* Down.framework */,
@@ -150,6 +157,7 @@
 			files = (
 				3373A209225E7B8E003786EF /* LaunchScreen.storyboard in Resources */,
 				3373A206225E7B8E003786EF /* Assets.xcassets in Resources */,
+				33E0AFF822613908007BEFAD /* modern.css in Resources */,
 				3373A204225E7B8C003786EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +176,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Down.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/IQKeyboardManagerSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftyAcknowledgements.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Html.framework",
 			);
 			name = "Run Script - carthage copy";
 			outputFileListPaths = (
@@ -176,6 +185,7 @@
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Down.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftyAcknowledgements.framework",
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/IQKeyboardManagerSwift.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Html.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

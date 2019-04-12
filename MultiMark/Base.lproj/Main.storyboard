@@ -68,26 +68,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="K0S-O2-iZp">
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18M-mK-u5k">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="K0S-O2-iZp" secondAttribute="trailing" id="5x2-tE-Zas"/>
-                            <constraint firstItem="K0S-O2-iZp" firstAttribute="top" secondItem="LFf-XP-GaD" secondAttribute="top" id="AUQ-2v-lyS"/>
-                            <constraint firstAttribute="bottom" secondItem="K0S-O2-iZp" secondAttribute="bottom" id="VZM-MX-jDg"/>
-                            <constraint firstItem="K0S-O2-iZp" firstAttribute="leading" secondItem="LFf-XP-GaD" secondAttribute="leading" id="XKg-fg-Fji"/>
+                            <constraint firstItem="18M-mK-u5k" firstAttribute="trailing" secondItem="CBF-MZ-yT5" secondAttribute="trailing" id="CgZ-Y2-0py"/>
+                            <constraint firstAttribute="bottom" secondItem="18M-mK-u5k" secondAttribute="bottom" id="Z0S-2L-DOm"/>
+                            <constraint firstItem="18M-mK-u5k" firstAttribute="leading" secondItem="CBF-MZ-yT5" secondAttribute="leading" id="bJz-Yt-bAs"/>
+                            <constraint firstItem="18M-mK-u5k" firstAttribute="top" secondItem="LFf-XP-GaD" secondAttribute="top" id="bot-qi-kNV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CBF-MZ-yT5"/>
                     </view>
                     <navigationItem key="navigationItem" id="RCh-Kr-ZhI"/>
                     <connections>
-                        <outlet property="outputView" destination="K0S-O2-iZp" id="Soc-MY-Oqa"/>
+                        <outlet property="outputView" destination="18M-mK-u5k" id="UMx-JA-dUM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VPG-iX-xN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
